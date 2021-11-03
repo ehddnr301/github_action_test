@@ -17,7 +17,7 @@ jobs:
         id: docker_meta
         uses: crazy-max/ghaction-docker-meta@v1
         with:
-          images: teichae/node
+          images: ${{ secrets.DOCKERHUB_USERNAME }}/qwer
           tag-semver: |
             {{version}}
             {{major}}.{{minor}}
